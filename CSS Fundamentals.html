@@ -1,0 +1,243 @@
+<!-- Lesson 1: Assignments | CSS Fundamentals
+
+Task 1: Use CSS to style the chocolate chip cookie recipe according to the following requirements:
+
+    Apply different font families, sizes, and styles to the recipe title, ingredients, and steps.
+
+    Set the background color of the header and footer.
+
+    Add padding and margin to elements to enhance spacing and layout.
+
+    Create a border around the recipe to separate it from the rest of the page.
+
+    Use different colors for text and background to improve readability.
+
+    Apply hover effects to links within the recipe, such as the recipe source link.
+
+    Utilize class, id, and at least 1 combinator selector when styling your CSS. 
+
+Expected Outcome: Utilize fundamental CSS properties to style recipe and enhance its appearance.
+
+2. Assignment: Creating a Recipe Submission Button and Styled Form
+
+Task 1: Create an HTML file containing a button that links to a separate page for recipe submission. Include elements such as <button> with appropriate attributes and an anchor tag <a> to link to the submission page.
+
+Expected Outcome: Utilize button and anchor tag elements to the page to allow users to navigate to another page for additional functionality.
+
+Task 2: Use CSS to style the button with hover effects using pseudo-classes (:hover). Ensure that the button stands out and invites users to click.
+
+Expected Outcome: Apply CSS pseudo-class styling to add visual appeal and provide additional queues to users.
+
+Task 3: Create a separate HTML file for the recipe submission form. Include form elements such as <form>, <input> fields for recipe name, ingredients, and instructions, and a submit button <button>.
+
+Expected Outcome: Utilize CSS elements for building forms to allow users to submit multiple data to forms. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Classic Chocolate Chip Cookies</title> <!-- This line is used to give the website a title whicxh will show up on the tab of the browser -->
+  </head>
+  <style>
+
+    body{
+      background-color:#ffdead;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #52280b;
+      margin: 10px;
+    }
+    h1.main-header{
+      background-color: #7b3d11;
+      font-size: 36px;
+      color: #ffdead;
+      font-family: cursive;
+      font-weight: 1000;
+      margin: 0px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    h1 h2 h3 p {
+      font-size: larger;
+    }
+
+    ul.ingredients {
+      background-color: #52280b;
+      list-style-type: none;
+      padding: 0;
+      margin: 20px auto;
+      border: 1px solid #52280b;
+      border-radius: 10px;
+      width: 30%;
+      text-align: left; /* Align text within the list to the left */
+    }
+
+    ul.ingredients > li {
+      background-color: #eea9b8;
+      margin: 5px 5px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    #steps {
+      background-color: #52280b;
+      padding: 0px;
+      margin: 10px auto;
+      border: 1px solid #52280b;
+      border-radius: 20px;
+      width: 95%;
+      list-style-position: inside;
+      text-align: left;
+    }
+
+    #steps > li {
+    background-color: #eea9b8;
+    margin: 10px 5px; 
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 10px;
+    
+    }
+
+  footer{
+      background-color: #7b3d11;
+      font-size: 16px;
+      color: #ffdead;
+      font-family: cursive;
+      font-weight: 1000;
+      margin: 0px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  a {
+    color: #7b3d11;
+    text-decoration: none;
+    }
+
+  a:hover {
+    color: #eea9b8;
+    text-decoration: underline;
+    }
+
+  img{
+  border-radius: 1000px;
+  width: 200px; 
+  height: 200px; 
+  }
+
+  button{
+  padding: 10px 20px;
+  margin: 15px;
+  width: 15%;
+  height: 10%;
+  font-size: 32px;
+  color: #eea9b8;
+  background-color: #7b3d11; 
+  border: #eea9b8 solid 2px;
+  border-radius: 5px;
+  }
+
+  button:hover{
+  padding: 10px 20px;
+  margin: 15px;
+  width: 15%;
+  height: 10%;
+  font-size: 32px;
+  color: #7b3d11;
+  background-color: #eea9b8; 
+  border: #7b3d11 solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+
+  </style>
+  <body>
+    <h1 class = "main-header">Classic Chocolate Chip Cookies</h1> <!-- This line is used to give the website a header -->
+    <p> <!-- This line is used to give the website a paragraph -->
+      Today we will learn how to make Grandmas famous classic chocolate chip 
+      cookies
+    </p>
+
+      <h2>Ingredients</h2> <!-- This line is used to give the website a header -->
+      <ul class = "ingredients">  <!-- This line is used to give the website an unordered list which will come out with bullets -->
+        <li>1 cup (2 sticks) unsalted butter, softened</li> <!-- This line is used to give the website a list item -->
+        <li>3/4 cup granulated sugar</li>
+        <li>3/4 cup packed brown sugar</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>2 large eggs</li>
+        <li>2 1/4 cups all-purpose flour</li>
+        <li>1 teaspoon baking soda</li>
+        <li>1/2 teaspoon salt</li>
+        <li>2 cups semisweet chocolate chips</li>
+        <li>1 cup chopped nuts (optional)</li>
+      </ul>
+
+
+      <h2>Steps</h2> 
+      <ol id="steps"> <!-- This line is used to give the website an ordered list which will come out with numbers -->
+        <li>
+          Preheat the oven to 375°F (190°C). Line baking sheets with parchment
+          paper or silicone baking mats.
+        </li>
+        <li>
+          In a large mixing bowl, cream together the softened butter, granulated
+          sugar, brown sugar, and vanilla extract until light and fluffy.
+        </li>
+        <li>Add the eggs, one at a time, beating well after each addition.</li>
+        <li>
+          In a separate bowl, whisk together the flour, baking soda, and salt.
+          Gradually add the dry ingredients to the wet ingredients, mixing until
+          just combined.
+        </li>
+        <li>
+          Stir in the chocolate chips and chopped nuts (if using) until evenly
+          distributed throughout the dough.
+        </li>
+        <li>
+          Drop rounded tablespoons of dough onto the prepared baking sheets,
+          spacing them about 2 inches apart.
+        </li>
+        <li>
+          Bake in the preheated oven for 9 to 11 minutes, or until the edges are
+          golden brown.
+        </li>
+        <li>
+          Remove from the oven and allow the cookies to cool on the baking
+          sheets for a few minutes before transferring them to wire racks to
+          cool completely.
+        </li>
+      </ol>
+
+
+      <h2>Enjoy!</h2>
+      <p> 
+        For further information about Classic Chocolate Chip Cookies please
+        visit:
+        <a 
+          href="https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016"
+        >
+          Cookie Secrets</a
+        >
+        <!-- ^^^^ This line is used to give the website a hyperlink -->
+      </p>
+      <h3>Follow this recipe, and I can guarantee your cookies will turn out just like these!</h3>
+      <P>
+        <img 
+          src = "https://img.freepik.com/free-psd/baking-delicious-chocolate-chip-cookies-isolated-transparent-background_191095-16880.jpg?w=1060&t=st=1720473387~exp=1720473987~hmac=af576a24630aae4e085941570f51157144598a10ffdabaa6bb7786c946a4ea5d"
+          alt = "Classic Chocolate Chip Cookies"
+        />
+        <!-- ^^^^ This line is used to give the website an image -->
+      </P>
+      <section>
+        <h3>Think you can do better? <br /> Click below and submit a new recipe!</h3>
+        <a href="submit-recipe.html"><button type="button">Submit</button></a>
+      </section>
+
+
+    <footer>
+        <p>Don't forget to enjoy your &quot;Classic Chocolate Chip Cookies&quot; with a tall glass of milk &ndash; the perfect combination!</p> <!-- we use &ndash; to create a long dash and the &quot; to add ""-->
+    </footer>
+      </body>
+</html>

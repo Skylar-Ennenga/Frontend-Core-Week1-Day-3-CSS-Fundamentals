@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Submission Form</title>
+    <style>
+        body {
+            background-color: #ffdead;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #52280b;
+            margin: 0zpx;
+            text-align: left; 
+        }
+
+        .main-header {
+            width: 50%;
+            background-color: #7b3d11;
+            font-size: 36px;
+            color: #ffdead;
+            font-family: cursive;
+            font-weight: 1000;
+            margin: 0px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3, p {
+            font-size: larger;
+        }
+
+        ul.ingredients {
+            background-color: #52280b;
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+            border: 1px solid #52280b;
+            border-radius: 10px;
+            width: 30%;
+            text-align: left; 
+            
+        }
+
+        ul.ingredients > li {
+            background-color: #eea9b8;
+            margin: 5px 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        ul.ingredients > li label {
+            display: block; 
+            margin-bottom: 5px;
+        }
+
+        ul.ingredients > li input[type="text"] {
+            width: 95%; 
+            padding: 5px; 
+            border: 1px solid #52280b; 
+            border-radius: 3px; 
+            font-size: 14px; 
+        }
+
+        footer {
+            width: 50%;
+            background-color: #7b3d11;
+            font-size: 16px;
+            color: #ffdead;
+            font-family: cursive;
+            font-weight: 1000;
+            margin: 0px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button{
+            padding: 10px 20px;
+            margin: 15px;
+            width: 15%;
+            height: 10%;
+            font-size: 32px;
+            color: #eea9b8;
+            background-color: #7b3d11; 
+            border: #eea9b8 solid 2px;
+            border-radius: 5px;
+        }
+
+        button:hover{
+            padding: 10px 20px;
+            margin: 15px;
+            width: 15%;
+            height: 10%;
+            font-size: 32px;
+            color: #7b3d11;
+            background-color: #eea9b8; 
+            border: #7b3d11 solid 2px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="main-header">Recipe Submission Form</h1>
+    <p>Think you got what it takes to go up against Grandma? <br /> Submit your recipe below!</p>
+
+    <h2>Ingredients</h2>
+    <form>
+        <ul class="ingredients">
+            <li>
+                <label for="butter">Butter:</label>
+                <input id="butter" type="text" placeholder="How much Butter?">
+            </li>
+            <li>
+                <label for="sugar">Sugar:</label>
+                <input id="sugar" type="text" placeholder="How much Sugar?">
+            </li>
+            <li>
+                <label for="brown-sugar">Brown Sugar:</label>
+                <input id="brown-sugar" type="text" placeholder="How much Brown Sugar?">
+            </li>
+            <li>
+                <label for="vanilla">Vanilla</label>
+                <input id="vanilla" type="text" placeholder="How much Vanilla?">
+            </li>
+            <li>
+                <label for="eggs">Eggs</label>
+                <input id="eggs" type="text" placeholder="How many Eggs?">
+            </li>
+            <li>
+                <label for="flour">Flour</label>
+                <input id="flour" type="text" placeholder="How much Flour?">
+            </li>
+            <li>
+                <label for="baking-soda">Baking Soda</label>
+                <input id="baking-soda" type="text" placeholder="How much Baking Soda?">
+            </li>
+            <li>
+                <label for="salt">Salt</label>
+                <input id="salt" type="text" placeholder="How much Salt?">
+            </li>
+            <li>
+                <label for="chocolate-chips">Chocolate Chips</label>
+                <input id="chocolate-chips" type="text" placeholder="How many Chocolate Chips?">
+            </li>
+            <li>
+                <label for="additional-ingredients">Additional Ingredients</label>
+                <input id="additional-ingredients" type="text" placeholder="Anything else?">
+            </li>
+            <li>
+                <label for="Steps">Steps</label>
+                <input id="Steps" type="text" placeholder="PLease enter the steps" height="300">
+            </li>
+        </ul>
+   
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>We'll Let you know what Grandma thinks!</footer>
+</body>
+</html>
